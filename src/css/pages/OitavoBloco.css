@@ -1,0 +1,55 @@
+.oitavoBlocoContainer
+{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ padding:5rem;
+ background:url("/src/assets/img/trianguloComQuadradoEsquerda.svg") bottom left,url("/src/assets/img/trianguloComQuadradoDireita.svg")bottom right;
+ background-repeat: no-repeat,no-repeat;
+ background-size:10% 80%,10%  50% ;
+ background-origin: border-box;
+ background-clip: border-box;
+ border-bottom:5rem solid transparent; 
+ z-index:2;
+}
+
+.numeroInscricao1a3 , .numeroInscricao3aBtn
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top:4rem;
+    
+}
+.numeroInscricao
+{
+ display: flex;
+ flex-direction: column;
+ margin: 0 1rem 0 1rem ;
+ width:8rem;
+}
+.numeroInscricao img
+{
+    width:5rem;
+    height:5rem;
+}
+
+.numeroInscricaoBtn
+{
+    
+    padding:5rem;
+    background:url("/src/assets/background/backgroundButton.svg") no-repeat center;
+    background-size: 15rem 10rem;
+    
+}
+@media(max-width:800)
+{
+    .oitavoBlocoContainer
+    {
+    background-size:15rem 40rem ;
+    }
+}

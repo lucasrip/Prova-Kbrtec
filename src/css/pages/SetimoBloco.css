@@ -1,0 +1,37 @@
+.setimoBlocoContainer
+{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 10rem;
+    align-items: center;
+    background: url("/src/assets/background/backgroundDecoradoInvertido.svg")no-repeat bottom ;
+    background-size:400% 200% ;
+    color:var(--branco);
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.textos h1
+{
+line-height:1.5 ;
+}
+.textos h1 p
+{
+  color:var(--textColorVerde);
+}
+.textos h2
+{
+    margin-top:2rem ;
+}
+
+.setimoBlocoContainer button
+{
+    margin: 0 10%;
+    line-height:1.2 ;
+}
+

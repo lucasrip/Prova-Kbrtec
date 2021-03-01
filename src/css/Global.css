@@ -1,0 +1,223 @@
+*
+{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html
+{
+    font-size: 16px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    background-color: #E5E5E5 ;
+}
+
+a
+{ 
+ text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+/* buttons */
+button
+{
+    cursor:pointer;
+    border:0;
+}
+
+:root
+{
+ --textColorVerde:#C2FF01;
+ --textColorVerdeOpacidade:#c4ff01a4;
+
+ --Vermelho:#D40033;
+ --VermelhoOpacidade:#d40031d0;
+ 
+ --cinzaClaro:#30616A;
+ --cinza:#171717;
+ --branco:#ffff;
+ --preto:#000000;
+
+ --azulEscuro:#197081;
+
+ --azulMeioEscuro:#1D737E;
+ --azulMeioEscuroOpacidade:#1d737ec7;
+
+ --azulMeioClaro:#4FB9C7;
+ --azulMeioClaroOpacidade:#4fb9c7bf;
+
+ --azulClaro:#F7F7F9;
+ 
+
+ --gradientPreto:linear-gradient(270deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
+}
+.textoVerde
+{
+    color:var(--textColorVerde);
+}
+.greenBtn , .redBtn
+{
+    background: var(--textColorVerde);
+    border-radius:1.8rem;
+    color: var(--preto);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9rem;
+    border:0px;
+    z-index:1;
+    transition: background 0.2s ease;
+}
+.redBtn
+{
+    background:var(--Vermelho);
+    color:var(--branco);
+}
+
+.greenBtn:hover
+{
+    background: var(--textColorVerdeOpacidade);
+
+}
+.redBtn:hover
+{
+    background:var(--VermelhoOpacidade);
+}
+.greenBtnGrande
+{
+    width:30.1rem;
+    height:3.75rem;
+}
+.greenBtnMedio
+{
+    width:20,3rem;
+    height:3.75rem;
+}
+.greenBtnPequeno
+{
+    width:11.1rem;
+    height:3.75rem;
+}
+/* font */
+
+.fontLeveOswald
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+.fontPesadoOswald
+{
+ font-family: 'Oswald', sans-serif;
+ font-weight: 700;
+}
+.fontNormalOswald
+{
+ font-family: 'Oswald', sans-serif;
+ font-weight: normal;
+}
+.fontPesadoMontserrat
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.fontLeveFira
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+.fontNormalFira
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+.fontMediaFira
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.fontMeioPesadoFira
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+.fontPesadoFira
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+.fontPesadoSource
+{
+    font-family: Source Sans Pro;
+    font-weight: 700;
+}
+/* tamanhos font */
+.tamanhoFont40px
+{
+    font-size:2.5rem;
+}
+
+.tamanhoFont30px
+{
+    font-size:1.8rem;
+}
+.tamanhoFont27px
+{
+    font-size:1.6rem;
+}
+
+.tamanhoFont25px
+{
+    font-size:1.5rem;
+}
+.tamanhoFont20px
+{
+ font-size: 1.25;
+}
+.tamanhoFont18px
+{
+    font-size:1.1rem;
+}
+.tamanhoFont16px
+{
+    font-size:1rem;
+}
+.tamanhoFont15px
+{
+    font-size:0.9rem;
+}
+
+@media (max-width:1200px)
+{
+    html
+    {
+      font-size: 10px;
+    }
+
+} 
+
+@media (max-width:700px)
+{
+    html
+    {
+      font-size: 8px;
+    }    
+} 
+
+@media (max-width:500px)
+{
+    html
+    {
+      font-size: 6px;
+    }
+} 

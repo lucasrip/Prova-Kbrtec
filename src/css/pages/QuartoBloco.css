@@ -1,0 +1,57 @@
+.quartoBlocoContainer , .textoComImg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    flex-direction: row;
+}
+.quartoBlocoContainer
+{
+    margin: 0 6rem;
+    padding:3rem;
+}
+
+.quartoBlocoContainer p
+{
+ flex: 1;
+ line-height: 1.6rem;
+ padding: 0 3rem;
+}
+.textoComImg
+{
+    flex: 1;
+}
+.textoComImg p
+{
+padding: 2rem;
+line-height: 2.4rem;
+}
+.textoComImg img
+{
+    width: 11rem;
+    height: 11rem;
+    
+}
+
+@media (max-width:600px)
+{
+    .quartoBlocoContainer
+    {
+        
+        flex-direction: column-reverse;
+        
+    }
+    .textoComImg
+    {
+     padding-bottom:  2rem;
+    }
+}
+
+
+
+
+
+
+
+

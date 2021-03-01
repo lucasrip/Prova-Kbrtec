@@ -1,0 +1,121 @@
+.nonoBlocoContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--branco);
+    flex-direction: row;
+    margin-top:-10rem;
+    z-index:1;
+   
+}
+.nonoBlocoEsquerda , .nonoBlocoDireita
+{
+ display:flex;
+ flex: 1;
+ flex-direction: column; 
+ align-items: center; 
+ 
+}
+
+.nonoBlocoEsquerda
+{
+    background-color: black;
+    
+}
+
+.nonoBlocoContainer ul li
+{
+    display: flex;
+    margin:1rem 0;
+   
+}
+.nonoBlocoContainer ul li p
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size:0.9rem;
+     margin:0 1rem;
+}
+
+
+
+.nonoBlocoEsquerda h1
+{
+ margin:1.5rem 0rem;
+ padding:2rem 10rem;
+}
+.nonoBlocoEsquerda h2
+{
+ margin:2.5rem 0rem;
+}
+
+.nonoBlocoEsquerda ul li p:nth-child(1)
+{
+    color: var(--textColorVerde);
+}
+.nonoBlocoEsquerda p
+{
+    margin:1rem 10rem;
+}
+
+.nonoBlocoEsquerda .blocoComBackground
+{ 
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:url("/src/assets/img/doisTriangulosEsquerda.svg.svg")no-repeat left center,linear-gradient(90deg,var(--preto)30%,var(--branco)900%);
+    border-top:2rem solid black;
+    border-bottom:2rem solid black;
+    background-size:33% 500% , 100% 100%;
+    background-origin: border-box;
+    background-clip: border-box;
+    padding:2rem 0;
+    width:100%;
+}
+
+
+.nonoBlocoDireita
+{
+   
+    background:linear-gradient(120deg,var(--azulMeioEscuro)25%,var(--azulMeioClaro)190%);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.nonoBlocoDireita h1
+{
+    margin:1.5rem 0rem;
+    padding:2rem 10rem;
+}
+.nonoBlocoDireita h2
+{
+ margin:2.5rem 0rem;
+}
+.nonoBlocoDireita p 
+{
+ padding:1rem 6rem;
+ font-weight:normal;
+}
+
+.nonoBlocoDireita li p 
+{
+ margin:3rem 0rem;
+ padding:0 1rem;
+}
+
+.nonoBlocoDireita button,.espaco
+{
+    margin-top: 6rem;
+}
+.nonoBlocoDireita button
+{
+    margin:5rem;
+}
+
+@media(max-width:600px)
+{
+    .nonoBlocoContainer
+    {
+      flex-direction: column;
+    }
+}

@@ -1,0 +1,102 @@
+/* home */
+.homeContainer
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    position: relative;
+    top:-4rem;
+    background:url('/src/assets/img/trianguloComQuadradoEsquerda.svg') no-repeat bottom left,linear-gradient(25deg,var(--azulClaro)60%,var(--cinzaClaro)200%)no-repeat;
+    background-size: 15rem 60%,100% 100% ; 
+    padding-bottom:1rem;    
+}
+.primeiraChamada
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 16rem;
+
+}
+.primeiroTexto
+{
+    display:flex;
+    flex-direction: column;
+    width: 23.3rem;  
+    margin-top:10rem;
+}
+.primeiroTexto h1
+{
+ font-size: 1.8rem;
+ line-height: 2.4rem;
+}
+ 
+.primeiroTexto h1 strong
+{
+ color:var(--textColorVerde);
+ background-color: var(--preto);
+ padding: 0 1rem;
+ border-radius: 0.5rem;
+}
+
+.primeiroTexto p
+{
+    margin-top:2rem;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+    line-height:1.5rem;
+}
+
+.primeiraFigura
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeiraFigura img
+{
+    margin-top:8rem;
+    width: 85%;
+    height: 85% ;
+    object-fit: clip;
+}
+.marginBtn
+{
+    margin-bottom:2rem;
+}
+
+/* responsivo home */
+@media (max-width:1200px)
+{
+    .homeContainer
+    {
+        background-size: 12rem 50%,100% 100%;
+    }  
+    
+    
+}
+@media (max-width:800px)
+{
+    .primeiraFigura img
+    {
+        margin-top:14rem;
+    }
+}
+@media (max-width:600px)
+{
+    .homeContainer
+    {
+        background-size: 10rem 40%,100% 100%;
+    }
+    
+    .primeiroTexto 
+    {
+     justify-content: center;
+     align-items: center;
+    }
+    .primeiraFigura img
+    {
+      display: none;
+    } 
+}

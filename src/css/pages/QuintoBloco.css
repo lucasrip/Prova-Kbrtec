@@ -1,0 +1,121 @@
+.quintoBlocoContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.blocoEsquerdo , .blocoDireito
+{
+ display:flex;
+ flex: 1;
+ flex-direction: column; 
+ justify-content: center;
+}
+
+.blocoEsquerdo
+{
+    background:url("/src/assets/img/doisTriangulosEsquerda.svg.svg"),linear-gradient(120deg,var(--azulMeioEscuro)25%,var(--azulMeioClaro)190%);
+    background-repeat: no-repeat,no-repeat;
+    background-position:left center,;
+    background-size: 12.5rem 100% , 100% 100%;
+    color:var(--branco);
+    align-items: left; 
+    text-align: left;
+   
+}
+.blocoEsquerdo h1
+{
+    line-height:2.4rem;
+    padding: 3rem 2rem 0rem 12rem;
+}
+.blocoEsquerdo h2
+{
+    line-height:1.6rem;
+    padding: 2rem 2rem 6rem 12rem;
+}
+.blocoEsquerdo h2 .color
+{
+    color: var(--textColorVerde);
+}
+
+.blocoEsquerdo h2 >p
+{
+    margin-top:1rem;
+}
+
+.blocoDireito
+{
+    
+    background:url("/src/assets/img/linhaVerde.svg")no-repeat bottom left, url('/src/assets/background/backgroundPreto.jpg') no-repeat;
+    background-size:8rem 39rem ,100% 100%;
+    color:var(--branco);
+    justify-content: center;
+    align-items: left;
+}
+
+.blocoDireito h1
+{
+    padding:6rem;
+}
+
+.blocoDireito .tabela
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.blocoDireito .tabela ul
+{
+    padding: 3.5rem 0; 
+    flex: 1;
+    
+}
+
+.blocoDireito .tabela ul:first-child li 
+{
+    display: flex;
+    color:var(--textColorVerde);   
+    margin:2.7rem 0 0 6rem ;
+}
+.blocoDireito .tabela ul:first-child li img
+{
+  width:1.5rem;
+  height:3rem;
+}
+
+
+.blocoDireito .tabela ul:first-child li p
+{
+    margin-left: 2rem; 
+}
+.blocoDireito .tabela:nth-child(2)
+{
+ margin-right:4rem;
+}
+.blocoDireito .tabela:nth-child(2) li
+{
+    margin-top:3rem;
+}
+.blocoDireito .tabela ul:nth-child(2) li p
+{
+    line-height:1.6rem;
+}
+.blocoDireito .tabela ul:nth-child(2) li p ~ p
+{
+    color: var(--textColorVerde);
+}
+
+@media (max-width:600px)
+{
+    .quintoBlocoContainer
+    {
+        flex-direction: column;
+    }
+    .quintoBlocoContainer h1
+    {
+      margin:0rem 20%;
+    }
+
+
+}

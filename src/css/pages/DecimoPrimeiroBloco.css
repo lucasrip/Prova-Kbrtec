@@ -1,0 +1,162 @@
+.decimoPrimeiroBlocoContainer
+{
+    display: flex;
+    margin-top:-12rem;
+    flex-direction: row;
+    
+}
+
+.decimoPrimeiroBlocoContainer .terceiroBlocoEsquerda
+{
+    display: flex;
+    flex: 1;
+    color:var(--branco);
+    background: #171717;
+}
+
+.terceiroBlocoEsquerda h1
+{
+    padding: 3rem 0;
+    margin-top: 10rem;
+} 
+.terceiroBlocoDireita h1
+{
+  padding: 5rem 0;
+}
+.terceiroBlocoEsquerda h2 ,.terceiroBlocoDireita h2
+{
+    margin: 1rem 5rem;
+}
+
+.videoContainer
+{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+
+    height:55%;
+   
+}
+.videoContainer iframe
+{
+  margin-top:1.5rem;
+  width: 20rem;
+  height:10rem;
+  border-radius:1.6rem;
+}
+
+.controleContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.controleContainer button
+{
+    display: flex;
+    width: 3.75rem;
+    height: 3.75rem;
+    justify-content: center;
+    align-items: center;
+}
+.controleContainer button img
+{
+  width: 1.5rem;
+  height:1.5rem;
+}
+
+.controleContainer button:first-child
+{
+  background: linear-gradient(360deg,var(--azulMeioEscuro) 10%,var(--azulMeioClaro)90%);
+}
+.controleContainer button:first-child:hover
+{
+    background:linear-gradient(360deg,var(--azulMeioEscuroOpacidade) 10%,var(--azulMeioClaroOpacidade)90%);
+}
+
+.controleContainer button:last-child
+{
+  background:#C2FF01;
+}
+.controleContainer button:last-child:hover
+{
+  background:#c4ff01d4;
+}
+
+.decimoPrimeiroBlocoContainer .terceiroBlocoDireita
+{
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+ align-items: center;
+ background:linear-gradient(25deg,var(--azulClaro)50%,var(--cinzaClaro)200%)no-repeat;
+ background-size:100% 100%;
+}
+
+.mosaicoConteiner img
+{
+  width:9.5rem ;
+  height:11;
+}
+
+.mosaicoConteiner
+{
+  display: grid;
+  grid-template-rows: 3.125rem 6.26rem 3.125rem 6.25rem 3.125rem ;
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+.mosaicoConteiner .globo 
+{
+ grid-area: 1/1;
+}
+.mosaicoConteiner .uol 
+{
+  grid-area: 2/2;
+}
+.mosaicoConteiner .cbn 
+{
+  grid-area: 1/3;
+}
+.mosaicoConteiner .g1 
+{
+  grid-area: 3/1;
+}
+.mosaicoConteiner .bandNews 
+{
+  grid-area: 4/2;
+  
+}
+.mosaicoConteiner .oGlobo 
+{
+  grid-area: 3/3;
+}
+.mosaicoConteiner .vendaMais 
+{
+  grid-row:6/6;
+  grid-column:2/2;
+}
+.mosaicoConteiner .negocios
+{
+  grid-row:5/6;
+  grid-column:3/4;
+}
+@media(max-width:600px)
+{
+
+}
+
+
+@media(max-width:600px)
+{
+  .decimoPrimeiroBlocoContainer
+  {
+    flex-direction: column;
+    padding-bottom: 7rem;
+  }
+}

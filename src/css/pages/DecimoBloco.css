@@ -1,0 +1,161 @@
+.decimoBlocoContainer
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background:url("/src/assets/img/trianguloComQuadradoEsquerda.svg")no-repeat top left, url("/src/assets/img/trianguloComQuadradoDireita.svg")no-repeat bottom right ;
+ background-size:10% 40%,20% 30%;
+ background-clip: border-box,border-box;
+ background-repeat: no-repeat,no-repeat; 
+ z-index:3;
+ padding-bottom:10rem;
+}
+.decimoBlocoContainer .trianguloComDinheiro
+{
+    margin:-5rem 0 5rem 0;
+    width: 10rem;
+    height:10rem;
+}
+.decimoBlocoContainer h2 , .decimoBlocoContainer i , .decimoBlocoContainer p
+{
+    margin:2rem 0;
+}
+
+.decimoBlocoContainer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(var(--azulMeioClaro)15%,#E5E5E5 95%)no-repeat center;
+    background-size:100% 40%;
+}
+.decimoBlocoContainer ul li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:2rem;
+}
+.decimoBlocoContainer ul li img
+{
+ flex: 1;
+ margin: 0 3rem;
+ width: 3rem;
+ height:3rem;
+}
+.decimoBlocoContainer ul li p
+{
+    flex: 1;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0 2.5rem;   
+    
+}
+.decimoBlocoContainer ul li p>span
+{
+    color:var(--azulEscuro);
+}
+.decimoBlocoContainer ul li strong
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.btnsPrecosContainer ,.textosDireita div
+{
+    display: flex;
+
+}
+.btnsPrecosContainer button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:37.5rem;
+    height: 8.1rem;
+    border-radius: 1.25rem;
+    margin: 3rem 1rem;
+}
+.btnsPrecosContainer button p , .btnsPrecosContainer button strong
+{
+    padding:1rem;
+}
+
+
+.btnsPrecosContainer button:first-child 
+{
+ color: var(--branco);
+ background-color:var(--Vermelho);
+ transition: background 0.2s;
+}
+
+.btnsPrecosContainer button:first-child:hover
+{
+background-color: var(--VermelhoOpacidade);
+}
+
+.btnsPrecosContainer button:last-child
+{
+    margin-top: 3rem;
+ color: var(--Vermelho);
+ border:2px solid var(--Vermelho);
+}
+.btnsPrecosContainer button:last-child p
+{
+    color:var(--preto);
+}
+
+.textosContainer
+{
+    display: flex;
+    margin:2rem;
+}
+.textosEsquerda ,.textosDireita
+{
+    flex: 1;
+    padding:0 6rem ;
+}
+
+.textosDireita div  
+{
+ margin:2rem  2rem;
+}
+.textosDireita div p 
+{
+ margin:0 2rem;
+}
+
+.decimoBlocoContainer button:last-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    margin: 4rem 0;
+}
+.decimoBlocoContainer i 
+{
+    display: flex;
+    justify-content: center;
+}
+.decimoBlocoContainer i img
+{
+    margin: -2rem 1rem;
+    width: 2rem;
+    height:2rem;
+}
+@media(max-width:600px)
+{
+    .btnsPrecosContainer
+    {
+        flex-direction: column;
+    }
+    .decimoBlocoContainer .trianguloComDinheiro
+   {
+       margin-top:2rem;
+   }
+    
+}

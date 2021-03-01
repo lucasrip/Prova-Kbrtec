@@ -1,0 +1,82 @@
+.terceiroBlocoContainer
+{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    
+    align-items: center;
+    background: url("/src/assets/icons/quadradoVerde.svg")no-repeat right top ,url("/src/assets/background/backgroundDecorado.svg")no-repeat bottom;
+    background-size:10% 50%,100% 100% ;
+    background-origin: border-box;
+    background-clip: border-box;
+    border-top:1px solid transparent;
+    padding:10rem 10rem;
+    color: var(--branco);
+}
+.logoComTexto
+{
+    display: flex;
+    flex: 1;
+    margin:2rem 4rem;    
+}
+.logoComTexto p
+{
+    margin: 0 1rem;
+    width:20rem ;
+    flex:1;
+    line-height: 2.2rem;
+}
+
+.logoComTexto img
+{
+    flex: 1;
+    width: 10rem;
+    height: 12rem;
+    
+}
+.terceiroBlocoContainer .terceiroTexto 
+{
+    color: var(--branco);
+    flex:3;
+    padding-left: 1rem;  
+    line-height: 1.6rem;
+}
+
+.terceiroBlocoContainer p strong
+{
+    color: var(--textColorVerde);
+}
+@media (max-width:800px)
+{
+    .terceiroBlocoContainer
+    {
+    background-size:10% 50%,200% 100% ;
+    border:14rem solid transparent;
+      flex-direction: column;
+    }
+    
+    
+ 
+}
+@media (max-width:600px)
+{
+  .terceiroBlocoContainer
+  {
+    flex-direction: column;
+    background-size:0% 0%,300% 100% ;
+    border: 15rem solid transparent; 
+  }
+  .logoComTexto
+  {
+      margin: 10% 10%;
+  }
+  .logoComTexto p
+  {
+      width:15rem;
+      margin:0 1rem;
+  }
+  .terceiroTexto
+  {
+      flex: 1;
+  }
+}

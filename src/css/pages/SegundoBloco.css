@@ -1,0 +1,127 @@
+.segundoBlocoContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    flex-direction: row;
+
+    margin: -4rem 0; 
+    background:url('/src/assets/img/trianguloSemQuadrado.svg')no-repeat top right,url("/src/assets/background/Sobre.svg") no-repeat center left;
+    background-size:5rem 30rem,5rem 25rem;
+    
+}
+
+.figure
+{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ flex: 1;
+ 
+}
+
+.figure .segundaFoto
+{
+    width: 33.5rem;
+    height: 33.5rem;
+}
+
+.btnFigure 
+{
+ display: flex;
+ justify-content: center;
+ margin-left: 10rem; 
+}
+
+.btnSocial
+{
+    display: flex;
+    margin:1rem 0.5rem;
+    width:3.2rem;
+    height:3.2rem;
+    background: linear-gradient(120deg,var(--azulMeioEscuro),var(--azulMeioClaro));
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.btnSocial img
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btnSocial:hover
+{
+    background: linear-gradient(120deg,var(--azulMeioEscuroOpacidade),var(--azulMeioClaroOpacidade));
+}
+.segundoTexto
+{
+   display: flex;
+   padding: 4rem 4rem;
+   flex-direction: column; 
+   flex: 1;
+   text-align: left;
+}
+.segundoTexto h1 
+{
+    display: flex;
+    line-height:3.3rem;
+}
+.segundoTexto h1 p
+{
+    padding-left:0.3rem ;
+}
+.segundoTexto h2 , .segundoTexto h3
+{
+    line-height: 1.6rem;
+    margin-top:4rem;
+}
+.segundoTexto h3
+{
+    
+    line-height: 1.6rem;
+    margin-top:2rem;
+}
+.segundoTexto h3 p
+{
+    margin-top:2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+@media (max-width:800px)
+{
+    .figure .segundaFoto
+    {
+        width: 25rem;
+        height: 32.5rem;
+    }
+}
+
+@media (max-width:600px)
+{
+    .segundoBlocoContainer
+    {
+        flex-direction: column;
+    }
+    .figure, .segundoTexto
+    {
+      justify-content: center;
+      align-items: center;
+    }
+    .segundoTexto
+    {
+        margin-left: 15rem;
+    }
+} 
+
+
+@media (max-width:360px)
+{   
+    .figure, .segundoTexto
+    {
+      justify-content: center;
+      align-items: center;
+    }
+} 
+

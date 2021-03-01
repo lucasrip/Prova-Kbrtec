@@ -1,0 +1,132 @@
+.decimoSegundoBlocoContainer
+{
+    display: flex;
+    flex-direction: column;
+    color:var(--branco);
+    flex-wrap: wrap;
+    margin-top:-7rem;
+
+}
+.decimoSegundoBlocoTopo
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background:url("/src/assets/img/doisTriangulosEsquerda.svg.svg")no-repeat top left,var(--preto)no-repeat;
+    background-size:25% 85%,100% 100%;
+    background-clip: border-box;
+    padding:10rem 0;
+}
+.decimoSegundoBlocoTopo img
+{
+    margin-top:-6rem;
+    width:15rem;
+    height:15rem;
+}
+.decimoSegundoBlocoTopo h1,.decimoSegundoBlocoTopo h2
+{
+    padding: 2rem 10rem ;
+}
+
+.decimoSegundoBlocoRodape
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background:url("/src/assets/img/doisTriangulosDireita.svg.svg")no-repeat right center,linear-gradient(180deg,var(--cinza)20%,var(--preto)80%);
+    background-size:25% 30%, 100% 100%;
+   
+    
+}
+.btnsContainerValidacao
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:-10rem 0;
+}
+.btnValidacao img
+{
+    flex: 1;
+    margin:1rem 12rem;
+    width: 3rem;
+    height:3rem;
+}
+.btnValidacao button
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 26.4rem;
+    height: 8.9rem;
+    flex:1;
+    padding:2rem;
+}
+
+.decimoSegundoBlocoRodape h1
+{
+  margin:15rem 0 4rem 0;
+  padding: 2rem 0rem;
+}
+.decimoSegundoBlocoRodape iframe
+{
+    width:52.1rem;
+    height:34.6rem;
+    margin:3rem 0;
+}
+.decimoSegundoBlocoRodape footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 3rem 0 0.5rem 0;
+}
+.decimoSegundoBlocoRodape footer p 
+{
+  width: 42%;
+  margin-bottom: 5rem;
+}
+.decimoSegundoBlocoRodape footer p span
+{
+    color:#505050;
+}
+.decimoSegundoBlocoRodape footer img:first-child
+{
+  width:10rem ;
+  height:10rem;
+}
+.decimoSegundoBlocoRodape footer img:last-child
+{
+  width:7rem ;
+  height:7rem;
+}
+
+@media(max-width:800px)
+{
+    .decimoSegundoBlocoRodape iframe
+   {
+    width:25rem;
+    height:20.3rem; 
+   }
+   .btnValidacao img
+   {
+    flex: 1;
+    margin:1rem 8rem;
+   }
+   .btnValidacao button
+   {
+    width: 20rem;
+    height: 10.rem;
+   }
+   .decimoSegundoBlocoRodape footer p 
+   {
+    width: 22%;
+    margin-bottom: 5rem;
+   }
+}
